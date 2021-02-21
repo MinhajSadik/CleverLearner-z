@@ -62,3 +62,27 @@ function add(num1, num2){
 }
 var sum = add(10, 10);
 console.log(sum);
+
+
+// object in javascript
+
+var student = {id:131, name:'ami', age:20};
+var student1 ={id:131, name:'tumi', phone:1811};
+
+var phoneNo1 = student1['phone'];// fast way to see output object
+var phoneNo2 = student1['phone'];// second way to see output object
+var phoneNo3 = "phone"; // third way to see output object
+var phoneOutput = student1[phoneNo3];// third way to see output object
+
+// console.log(phoneNo1, phoneNo2, phoneOutput);
+
+// update object property
+student1.phone = 39999; // first way to set value in a object property
+student1['phone'] = 88888; // second way to set value in a object property
+student1[phoneNo3] = 193939; // third way to set value in a object property
+
+student1.profession = 'programming'; //first way to create a property and set value in a object
+student1['profession'] = 'programmer'; //second way to create a property and set value in a object 
+
+console.log(student1);
+
